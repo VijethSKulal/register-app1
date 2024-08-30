@@ -2,7 +2,7 @@ pipeline {
     agent { label 'Jenkins-Agent' }
     tools {
         jdk 'Java17'
-        maven 'Maven3'
+        maven 'maven3'  // Change 'Maven3' to 'maven3'
     }
     stages {
         stage("Cleanup Workspace") {
@@ -27,6 +27,6 @@ pipeline {
             steps {
                 sh "mvn test"
             }
-        }
-    }
+        }
+    }
 }
